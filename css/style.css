@@ -97,12 +97,15 @@ caption2{
 	margin:0 auto;		/* 居中 这个是必须的，，其它的属性非必须 */
 	position: relative;
 	width: 900px;
-	height: 2036px;
+	height: 3000px;
 	padding-bottom: 6px;
 /*	background: url('bg.jpg') no-repeat top right;*/
 	background: no-repeat bottom right;
 	border-style: solid;
 	border-color: blue;
+}
+#cp {
+	color: rgb(119, 119, 204);
 }
 .caption {
     margin:0 auto;text-align:center;
