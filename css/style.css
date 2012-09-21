@@ -1,0 +1,130 @@
+input, label {
+    font-size: 20px;
+}
+
+body {
+    margin:0 auto;text-align:center;
+}
+
+body,div, dl, dt, dd, h1, h2, p, input {
+    margin: 10px;
+    padding: 10px;
+}
+
+h2{text-align:center;font-size:200%;}
+caption2{
+	text-align:center;
+	font-size:300%;
+	background-color:#0389d8;
+	color:#003400;
+	font-weight:bold;
+}
+
+.vote-b {
+	width:143px;
+	height:40px;
+	background:url("bg12.jpg") no-repeat left top;
+	color:#FFF;
+        position:absolute;
+        left: 40%;
+        bottom:10%;
+        z-index:2008;
+}
+.login-b, .login-b2, .login-b3{
+        margin:0 auto;text-align:center;
+	background-image: url(b2.gif);
+	background-position: 0px 0px;
+	height: 32px;
+	width: 82px;
+	display: block;
+	border:0;
+	background-repeat: no-repeat;
+	cursor:pointer!important;
+}
+.login-b2{
+	background-image: url(b2.gif);
+	background-position: 0px -33px;
+}
+.login-b3{
+	background-image: url(b2.gif);
+	background-position: 0px -66px;
+}
+
+
+#main {
+    float: left;
+    height: auto;
+    width: auto;
+    border: 1px solid #FF0000;
+}
+#top {
+    height:100px;
+    margin:0 auto;text-align:center;
+    width: 600px;
+    background-image: url(logo.png);
+}
+#top2 {
+    height:60px;
+    margin:0 auto;text-align:center;
+    width: 500px;
+    background-image: url(FrontLogo.png);
+}
+
+#left {
+ float: left;
+ height: 400px;
+ border: 1px solid #00FF00;
+}
+#right {
+ float: left;
+ height: 400px;
+ margin-left: 20px;
+ margin-right: 20px;
+ border: 1px solid #0000FF;
+}
+#leftindex {
+	margin:0 auto;		/* 居中 这个是必须的，，其它的属性非必须 */
+	position: relative;
+	width: 900px;
+	height: 336px;
+	padding-bottom: 6px;
+/*	background: url('bg.jpg') no-repeat bottom right;*/
+	background: no-repeat bottom right;
+	border-style: solid;
+	border-color: green;
+}
+#rightindex {
+	margin:0 auto;		/* 居中 这个是必须的，，其它的属性非必须 */
+	position: relative;
+	width: 900px;
+	height: 2036px;
+	padding-bottom: 6px;
+/*	background: url('bg.jpg') no-repeat top right;*/
+	background: no-repeat bottom right;
+	border-style: solid;
+	border-color: blue;
+}
+.caption {
+    margin:0 auto;text-align:center;
+    font-size: 20px;
+	font-weight:bold;
+	color:blue;
+	background-color:#99FF00;
+}
+.list20 {
+    float: left;
+    font-size: 15px;
+    margin-left: 100px;
+    padding:0;
+}
+.listAll {
+    font-size: 15px;
+    margin:0 auto;text-align:left;
+}
+.listAll lis {
+    float: left;
+    font-size: 15px;
+    margin-left: 100px;
+    padding:0;
+}
+.listAll lis:hover{background:#02dffc;}

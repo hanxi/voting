@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+body {
+font: normal 11px verdana;
+}
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+width: 150px; /* Width of Menu Items */
+border-bottom: 1px solid #ccc;
+}
+ul li {
+position: relative;
+}
+li ul {
+position: absolute;
+left: 149px; /* Set 1px less than menu width */
+top: 0;
+display: none;
+}
+/* Styles for Menu Items */
+ul li a {
+display: block;
+text-decoration: none;
+color: #777;
+background: #fff; /* IE6 Bug */
+padding: 5px;
+border: 1px solid #ccc;
+border-bottom: 0;
+}
+/* Fix IE. Hide from IE Mac /*/
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; }
+/* End */
+ul li a:hover { color: #E2144A; background: #f9f9f9; } /* Hover Styles */
+li ul li a { padding: 2px 5px; } /* Sub Menu Styles */
+li:hover ul, li.over ul { display: block; } /* The magic */
+</style>
+<style mce_bogus="1">body {
+font: normal 11px verdana;
+}
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+width: 150px; /* Width of Menu Items */
+border-bottom: 1px solid #ccc;
+}
+ul li {
+position: relative;
+}
+li ul {
+position: absolute;
+left: 149px; /* Set 1px less than menu width */
+top: 0;
+display: none;
+}
+/* Styles for Menu Items */
+ul li a {
+display: block;
+text-decoration: none;
+color: #777;
+background: #fff; /* IE6 Bug */
+padding: 5px;
+border: 1px solid #ccc;
+border-bottom: 0;
+font-size: 20px;
+}
+/* Fix IE. Hide from IE Mac /*/
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; }
+/* End */
+ul li a:hover { color: #E2144A; background: #f9f9f9; } /* Hover Styles */
+li ul li a { padding: 2px 5px; } /* Sub Menu Styles */
+li:hover ul, li.over ul { display: block; } /* The magic */</style>
+<script language="JavaScript">
+startList = function()
+{
+  if (document.all&&document.getElementById)
+  {
+    navRoot = document.getElementById("nav");
+    for (i=0; i<navRoot.childNodes.length; i++)
+    {
+      node = navRoot.childNodes[ i ];
+      if (node.nodeName=="LI")
+      {
+        node.onmouseover=function()
+        {
+		  this.className+=" over";
+		}
+        node.onmouseout=function()
+        {
+		  this.className=this.className.replace(" over", "");
+		}
+      }
+    }
+  }
+}
+function setVariables() {
+  if (navigator.appName == "Netscape") {
+    v=".top=";
+    dS="document.";
+    sD="";
+    y="window.pageYOffset";
+  }
+  else {
+    v=".pixelTop=";
+    dS="";
+    sD=".style";
+    y="document.body.scrollTop";
+  }
+}
+function checkLocation() {
+  object="object1";
+  yy=eval(y);
+  yy = yy+100;
+  eval(dS+object+sD+v+yy);
+  setTimeout("checkLocation()",10);
+}
+</script>
+</head>
+<body onload="setVariables();checkLocation();startList();">
+    <ul id="nav">
+     <li><a href="../index.php">网站首页</a>
+     </li>
+     <li><a href="">基本操作</a>
+      <ul>
+        <li><a href="javascript:addVote()">添加投票项</a></li>
+        <li><a href="javascript:alterVote()">修改投票项</a></li>
+        <li><a href="javascript:delVote()">删除投票项</a></li>
+      </ul>
+     </li>
+     <li><a href="">高级操作</a>
+      <ul>
+        <li><a href="javascript:cleanVote()">清空投票记录</a></li>
+        <li><a href="javascript:cleanAll()">清空投票项</a></li>
+      </ul>
+     </li>
+    </ul>
+</body>
+</html>
