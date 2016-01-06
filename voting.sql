@@ -82,8 +82,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`name`, `passwd`) VALUES
-('hanxi', '700469ca1555900b18c641bf7b0a1fa1'),
-('jianhuanwa', 'adac5659956d68bcbc6f40aa5cd00d5c');
+('hanxi', 'e10adc3949ba59abbe56e057f20f883e'),
+('jianhuanwa', 'e10adc3949ba59abbe56e057f20f883e');
 
 --
 -- 限制导出的表
